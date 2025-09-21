@@ -1,0 +1,61 @@
+.reports-container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.date-range {
+  margin-bottom: 20px;
+}
+
+.summary-cards {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.card.light-blue {
+  background-color: #d0e7ff;
+  padding: 20px;
+  border-radius: 8px;
+  flex: 1;
+  text-align: center;
+}
+
+.detailed-reports {
+  margin-bottom: 20px;
+}
+
+.enrollment-performance {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 20px;
+}
+
+.course-enrollment, .student-performance {
+  flex: 1;
+}
+
+.student-performance table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.student-performance th, .student-performance td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+}
+
+.page-visits {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.visits-bar-chart, .visits-trend-chart, .traffic-distribution, .active-hours {
+  background-color: #1e293b;
+  color: white;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+}

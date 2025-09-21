@@ -1,0 +1,62 @@
+.transaction-container {
+  padding: 20px;
+  background-color: #d3d3d3; /* light gray background as in screenshot */
+  min-height: 400px;
+}
+
+.transaction-filters {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  gap: 10px;
+}
+
+.transaction-filters button {
+  padding: 5px 15px;
+  border: none;
+  background-color: #eee;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+.transaction-filters button.active {
+  background-color: #bbb;
+}
+
+.transaction-search {
+  margin-left: auto;
+  display: flex;
+  gap: 5px;
+}
+
+.transaction-search input {
+  padding: 5px 10px;
+  border: 1px solid #999;
+  border-radius: 4px;
+}
+
+.transaction-search button {
+  padding: 5px 15px;
+  border: 1px solid #999;
+  background-color: white;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.transaction-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #d3d3d3;
+}
+
+.transaction-table th,
+.transaction-table td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #999;
+}
+
+.transaction-table th {
+  font-weight: bold;
+}

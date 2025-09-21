@@ -1,0 +1,38 @@
+/* Reset and global */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body,
+html {
+  width: 100%;
+  font-family: Arial, sans-serif;
+}
+
+/* Container centers page content */
+.container {
+  max-width: 100%;
+  min-width: auto;
+  max-width: auto;
+  margin: 0 auto; /* horizontal center */
+  padding: 0;
+}
+
+.container2 {
+  max-width: 100%;
+  min-height: 100%;
+  margin: 0 auto; /* horizontal center */
+  padding: 0;
+}
+
+/* Sections styling */
+section {
+  padding: 100px 20px;
+  text-align: center;
+}
+
+section:nth-child(even) {
+  background-color: #f5f5f5;
+}

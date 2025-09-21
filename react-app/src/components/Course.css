@@ -1,0 +1,173 @@
+.admin-dashboard {
+  display: flex;
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #f5f1e9, #e6dfd3);
+  color: #2a4d3a;
+}
+
+.sidebar {
+  width: 220px;
+  background: linear-gradient(180deg, #a3bfa3, #7a996f);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 0 20px 20px 0;
+  box-shadow: 2px 0 15px rgba(0,0,0,0.1);
+}
+
+.sidebar-logo {
+  height: 90px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
+  margin-bottom: 35px;
+  box-shadow: 0 0 15px rgba(255,255,255,0.3);
+}
+
+.sidebar-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar-nav ul li {
+  padding: 15px 12px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  border-radius: 12px;
+  transition: background-color 0.3s ease;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.sidebar-nav ul li.active,
+.sidebar-nav ul li:hover {
+  background-color: rgba(255, 255, 255, 0.25);
+  color: #2a4d3a;
+}
+
+.sidebar-nav ul li a {
+  color: inherit;
+  text-decoration: none;
+  display: block;
+}
+
+.logout-btn {
+  margin-top: auto;
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+  padding: 12px;
+  border-radius: 15px;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease;
+}
+
+.logout-btn:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  color: #2a4d3a;
+}
+
+.main-content {
+  flex-grow: 1;
+  padding: 40px 50px;
+  background: rgba(249, 246, 240, 0.9);
+  border-radius: 0 25px 25px 0;
+  box-shadow: 0 0 40px rgba(42, 77, 58, 0.3);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.header-course {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.header-course h1 {
+  font-weight: 700;
+  font-size: 1.8rem;
+  color: #2a4d3a;
+}
+
+.header-controls {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.add-course-btn {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-course-btn:hover {
+  background-color: #388e3c;
+}
+
+.filter-btn {
+  background-color: #ccc;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-weight: 700;
+  cursor: pointer;
+  color: #333;
+  transition: background-color 0.3s ease;
+}
+
+.filter-btn:hover {
+  background-color: #999;
+}
+
+.search-input {
+  padding: 8px 15px;
+  border-radius: 15px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  outline: none;
+  width: 180px;
+}
+
+.course-table-section {
+  background: #dcd6c9;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 8px 25px rgba(42, 77, 58, 0.15);
+}
+
+.course-table {
+  width: 100%;
+  border-collapse: collapse;
+  color: #2a4d3a;
+  font-weight: 600;
+}
+
+.course-table th,
+.course-table td {
+  padding: 12px 15px;
+  text-align: left;
+}
+
+.course-table thead {
+  background-color: #b9b49a;
+}
+
+.course-table tbody tr:nth-child(even) {
+  background-color: #e6e1d6;
+}
+
+.course-table tbody tr:hover {
+  background-color: #c9d1b8;
+  cursor: pointer;
+}

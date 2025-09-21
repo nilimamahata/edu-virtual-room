@@ -1,0 +1,146 @@
+/* Home Section */
+.home-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  position: relative;
+  background: url("src/assets/bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: "Outfit", sans-serif;
+  overflow: hidden;
+  padding: 20px;
+}
+
+/* Social Links at Bottom Left - Horizontal */
+.social-links {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  display: flex; /* horizontal */
+  flex-direction: row;
+  gap: 15px;
+}
+
+.social-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background-color: #0a4d37;
+  color: #fff;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  transition: transform 0.3s ease, background-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+/* Hover animation - lift and color change */
+.social-links a:hover {
+  background-color: #dfcaa3ff;
+  transform: translateY(-5px) scale(1.1);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Main Content Card */
+.home-card {
+  background: rgba(255, 255, 255, 0.67);
+  padding: 50px 40px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.8);
+  animation: fadeInUp 1s ease forwards;
+  max-width: 600px;
+}
+
+/* Text Styles */
+.home-card h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: black;
+}
+
+.brand-name-home {
+  font-size: 5rem;
+  font-weight: 700;
+  color: #0a4d37;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.brand-name {
+  color: #0a4d37;
+  font-size: 2rem;
+  font-weight: 700;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.home-card p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  line-height: 1.5;
+  color: #333;
+}
+
+.initial-text {
+  font-size: 1.1rem;
+  font-weight: 400;
+  margin-bottom: 25px;
+}
+
+.comfort-text {
+  font-size: 3.2em;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+
+/* Get Started Button */
+.get-started-btn {
+  padding: 14px 35px;
+  font-size: 1.1rem;
+  color: #fff;
+  background: #0a4d37;
+  border: none;
+  border-radius: 9px;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.get-started-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Fade-in animation */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .home-card {
+    padding: 35px 25px;
+  }
+  .home-card h1 {
+    font-size: 3rem;
+  }
+  .home-card p,
+  .comfort-text {
+    font-size: 1rem;
+  }
+  .social-links {
+    left: 10px;
+    bottom: 10px;
+    gap: 10px;
+  }
+}
